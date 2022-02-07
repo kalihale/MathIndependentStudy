@@ -1,0 +1,30 @@
+---
+title: "Homework1"
+output: pdf
+---
+
+The Gamow-Stern Elevator Puzzle
+
+```{r, setup}
+# install.packages("reticulate")
+library(reticulate)
+```
+
+```{python}
+import random
+x = [1,2,3]
+```
+```{python}
+print(x)
+```
+
+This function will tell us if the elevator in question is going up or down. If it returns True, it's going down. Otherwise, it's going up.
+```{python}
+def elevator():
+    if random.randrange(1,7) <= 5:
+        return True
+    else:
+        return False
+
+data = [elevator() for i in range(100)]
+```

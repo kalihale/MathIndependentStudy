@@ -1,0 +1,13 @@
+---
+title: "Python"
+output: html_document
+---
+
+```{r setup}
+library(reticulate)
+use_python("/usr/bin/python3")
+```
+
+```{python}
+print ("ok")
+```
